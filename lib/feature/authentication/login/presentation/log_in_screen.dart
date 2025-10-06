@@ -42,7 +42,7 @@ class _LogInScreenState extends State<LogInScreen> {
       if (isValidUser) {
         appData.write(loggedInEmail, email);
         appData.write(kKeyIsLoggedIn, true);
-        ToastUtil.showShortToast("Sign up successful");
+        ToastUtil.showShortToast("Log in successful");
         NavigationService.navigateTo(Routes.navigation);
       } else {
         ToastUtil.showShortToast("Invalid email or password");
